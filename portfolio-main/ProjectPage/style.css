@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-details {
+    padding: 80px 15px;
+    background-color: #ffbdd3;
+    color: #880e4f;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Image Slider */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    height: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: auto;
+    /* Ensure the slides take up the full height of the slider */
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+
+    /* Each image takes full width of the slider */
+}
+
+.project-description {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    /* White background for better contrast */
+    border: 1px solid #e0e0e0;
+    /* Light gray border for subtle definition */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+    font-family: 'Roboto', sans-serif;
+    /* Modern, clean font */
+}
+
+.project-description h2 {
+    font-size: 2em;
+    color: #880e4f;
+    /* Matching color from the theme */
+    margin-bottom: 15px;
+    font-weight: bold;
+    /* Bold heading for emphasis */
+    font-family: 'Montserrat', sans-serif;
+    /* Stylish font for headings */
+}
+
+.project-description h3 {
+    font-size: 1.5em;
+    color: #e91e63;
+    /* Slightly different color for subheadings */
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    /* Bold subheading */
+    font-family: 'Montserrat', sans-serif;
+    /* Stylish font for subheadings */
+}
+
+.project-description p {
+    font-size: 1em;
+    line-height: 1.6;
+    /* Improved readability */
+    color: #333;
+    /* Dark gray text for better readability */
+    font-family: 'Roboto', sans-serif;
+    /* Consistent font for paragraphs */
+    margin-bottom: 5px;
+}
+
+.project-description ul {
+    list-style-type: square;
+    /* Square bullets for a different look */
+    padding-left: 20px;
+    /* Indent list items */
+}
+
+.project-description ul li {
+    font-size: 1em;
+    color: #555;
+    /* Slightly lighter gray for list items */
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    /* Consistent font for list items */
+}
+
+/* Importing Google Fonts */
+
+
+.github-link {
+    margin-top: 20px;
+}
+
+.github-link .btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.github-link .btn:hover {
+    background-color: #ad1457;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-details {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .slider {
+        height: auto;
+        /* Reduce height on smaller screens */
+        margin: 20px 0;
+    }
+
+    .project-description h2 {
+        font-size: 1.8em;
+    }
+
+    .project-description h3 {
+        font-size: 1.4em;
+    }
+
+    .github-link .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-details {
+        padding: 15px 5px;
+    }
+
+    .container {
+        padding: 0 5px;
+    }
+
+    .project-description h2 {
+        font-size: 1.5em;
+    }
+
+    .project-description h3 {
+        font-size: 1.2em;
+    }
+
+    .slider {
+        height: auto;
+        /* Further reduce height on very small screens */
+        /* Ensure a minimum height */
+        margin: 10px 0;
+    }
+
+    .github-link .btn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
